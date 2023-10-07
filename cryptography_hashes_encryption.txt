@@ -5,11 +5,11 @@ Example:-
 File with name xyz.txt, generate md5 hash or sh1 hash
 
 1. Open Hash calculator
-2. Righty side of Data, click that 3 .
+2. Righty side of Data, click that 3.
 3. Select the file
 4. Click on calculate
 
----------------------
+----------------------
 Got HASH
 ----------------------
 
@@ -17,25 +17,67 @@ Got HASH
 Vera Crypt
 **************************************
 
-# vera crypt can be used to create encrypted volume (containers)
-# encrypted volumes can't be opened direct, it has to be mounted
-# create a drive to mount that encrypted olfer, while creating select file (select encrypted foldeR)
-# after that click mount
-# new local disk will be there in my computer
-# dismount will remove the local disk
+# Vera crypt can be used to create encrypted volumes (containers)
+# Encrypted volumes can't be opened directly, it has to be mounted
+# create a drive to mount that encrypted folder, while creating the select file (select encrypted folder)
+# After that click mount
+# A new local disk will be there on my computer
+# Dismount will remove the local disk
 
 Question:
 
-There is a file  inside a Encrypted Drive or Folder, find a secret code inside that file
+There is a file  inside an Encrypted Drive or Folder, find a secret code inside that file
 
-# Open vera crypt
-# create a volume (choose any ununsed label K, L, M like that)
+# Open Vera crypt
+# create a volume (choose any unused label K, L, M like that)
 # select a file
-# select encrypted folder
+# select the encrypted folder
 # hit mount
-# will ask for password, enter it
+# will ask for a password, enter it
 # will mount it
 # new drive will be there 
 # open 
 # open file 
 # Finished
+
+**************************************************
+Cracking Hashes - hashes.com
+***************************************************
+
+# Question: File in a folder, and there is a hash
+# If hash type is specified, it is easy
+# open hashes.com or crackstation.com
+# copy the hash to the website
+Got the answer
+
+
+
+**************************************************
+DECODE Text - BE TEXT ENCODER
+***************************************************
+Copy paste encoded message and decode
+
+
+**************************************************
+Decrypt Text from a file - CRYPTOOL RC4
+***************************************************
+# Open Cryptool
+# select file from open file
+# Encrypt / Deecrypt
+# symmetric or modern
+# select rc4 or any as per question
+# enter key length as per quest , ex: 14
+
+
+**************************************************
+Decrypt Text from a file - CRYPTOOL DES ECB
+***************************************************
+# Quest - A file example:- ECB.hex
+# Open Cryptool
+# open file
+# select file 
+# Encrypt / Decrypt
+# Symmetric or modern
+# select  DES ECB
+# enter key length as per quest, ex: 14
+
