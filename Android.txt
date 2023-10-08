@@ -21,3 +21,44 @@ nmap ip -sV -p 5555    (Scan for adb port)
 cd D
 cd ..
 cd download
+
+
+NEW ANDROID
+**********************************************
+ELF - Just an extension
+**********************************************
+nmap ip -sV -p 5555    (Scan for adb port)
+
+# connect to android device
+
+  adb connect IP:5555    (Connect adb with parrot)
+  adb shell              (Access mobile device on parrot)
+
+# check directories
+  cd sdcard/
+  ls
+  cd scan
+  ls
+# found 3 elf files
+# find highest entropy value
+# move scan folder to VM
+# use pwd to find directory
+  pwd
+#copy the path of the folder scan/
+  sudo adb pull /sdcard/scan 
+
+# got files copies
+# use tool ent (entropy) (if not installed, apt install ent)
+# entropy means, randomness or uniqueness
+# check installed or not using
+  ent -h
+# start finding entropy of 3 elfs, one by one
+  ent evil.elf
+  ent evil2.elf
+  ent evil3.elf
+# generate sha384 hash
+# use tool called sha384sum
+  sha384sum filename
+  sha384sum evil.elf
+# use last 4 digits as answer
+
