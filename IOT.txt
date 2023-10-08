@@ -1,0 +1,19 @@
+To analyze the traffic capture from an IoT network, we can use the Wireshark tool. Follow these steps:
+
+1. Open Wireshark on the "EH Workstation &#8364;" 1" (ParrotSecurity) machine.
+
+2. Go to File > Open and select the traffic capture file from the Documents folder.
+
+3. Once the file is opened, you can start analyzing the packets.
+
+4. In the Wireshark filter bar, enter the following filter to display only the MQTT packets:
+
+mqtt
+
+5. Look for the packet with the "Publish" message. This packet will have a "PUBLISH" label in the MQTT section of the packet details.
+
+6. In the packet details, locate the "Remaining Length" field. This field represents the length of the message in the "Publish" packet.
+
+Please note that the actual value of the "Remaining Length" field may vary depending on the specific traffic capture file. To find the exact value, you can right-click on the field in the packet details and select "Follow TCP Stream" or "Follow UDP Stream" (depending on the protocol used). This will open a new window displaying the message content. The length of this message is the value you are looking for.
+
+Please note that the provided answer is a general guideline and may not be accurate for a specific traffic capture file. To find the exact answer, you will need to follow the steps above and analyze the specific traffic capture file.
