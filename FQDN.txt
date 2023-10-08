@@ -1,0 +1,26 @@
+FQDN - fully Qualified Domain Name
+***************************************
+EXAMPLE:
+FQDN = mail.example.com
+
+Find FQDN?
+************************
+FQDN of your computer -> 
+
+  Windows -> System Setting -> Full computer Name
+  # Windows -> System Properties 
+
+Find FQDN of a Domain Controller in a subnet?
+
+#  port 389 -> LDAP service
+  nmap -p389 -sV -iL <target-list>
+
+# result would be, IPs having port 389 open
+# only few will be there
+# if target ip is already known
+  nmap -p389 -sV <targte_IP> -Pn
+
+#get the Host and Domain
+FQDN = Host.Domain.com
+
+MW_FQDN_SMB_WIFI_IOT_IMAGE_STEGNOGRAPHY_COMNDEXEC_SQLMAP_PRIVILEGE_ESCALATION.txt
