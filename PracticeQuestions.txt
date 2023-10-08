@@ -1,0 +1,70 @@
+Find OS - with database
+*******************************
+nmap -sV ip/24
+nmap -A ip/24
+
+look for ip with port of OpenSQL open (Port 3306)
+
+
+Find ip with RDP enabled
+********************************
+# check in above scan result or
+
+nmap -Pn -p -sV 3389 ip
+
+
+Cry-DES (ECB) encrypted files
+********************************
+Open Cryptool
+Encrypt/Decrypt
+DES (ECB)
+
+# after that connect using
+  ftp ip
+  # user username and password
+  # after that use 
+  get file.txt
+
+
+Stegnography (information saved concealed account)
+****************************************************
+use SNOW tool
+
+
+Wordpress
+*************************
+wpscan --url https://<ip>/dfd -u sarah -P passlist.txt
+
+DVWA
+*************************
+#login
+# go to the link oif the text file
+# copy the hash
+# go to hashes.com or crackstation.com
+
+Windows Machine - File
+***************************
+Use RDP
+
+ALIVE hosts
+*******************************
+nmap -sn ip/24
+
+veracrypt
+********************************
+
+RC4
+*************************
+Cryptool
+
+Android
+*******************************
+# Port 5555
+# use adb
+
+Encode Data 
+**********************
+BCText Encoder
+
+
+
