@@ -1,0 +1,18 @@
+
+# pcap will be given
+
+# aircrack tool
+
+# wep 
+  aircrack-ng pcapfilename
+
+
+#WPA2 newtrok
+
+
+
+# Open PCAP file
+# Get BSS Id from Pcap file
+# aircrack-ng -a2 -b <targetbssid> -w <passwordlist> pcapfile
+(Drag and Drop also possible)
+Key Found
