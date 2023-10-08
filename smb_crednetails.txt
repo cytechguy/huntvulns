@@ -1,0 +1,8 @@
+
+nmap -p 445 192.168.0.0/24
+
+smbclient -U Henrhsd //<machine_ip>/<share>
+
+smbclient -U Henrhsd //<machine_ip>/<share>/Sniff.txt
+
+openssl enc -d -aes-256-cbc -in Sniff.txt -out secret.txt -pass pass:<Henrhsd's_password>
