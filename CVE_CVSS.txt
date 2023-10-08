@@ -1,0 +1,14 @@
+Question: IP will be given and need to find severiuty of vulnerability
+**************************************************************************
+
+nmap -Pn --script vuln ip
+
+# CVE number will be in the result
+
+# copy and paste in google
+
+# check in nvd.nist.gov
+
+# will get severity from that website
+
+# most of the time it is 10
