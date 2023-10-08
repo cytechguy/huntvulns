@@ -17,3 +17,23 @@ mqtt
 Please note that the actual value of the "Remaining Length" field may vary depending on the specific traffic capture file. To find the exact value, you can right-click on the field in the packet details and select "Follow TCP Stream" or "Follow UDP Stream" (depending on the protocol used). This will open a new window displaying the message content. The length of this message is the value you are looking for.
 
 Please note that the provided answer is a general guideline and may not be accurate for a specific traffic capture file. To find the exact answer, you will need to follow the steps above and analyze the specific traffic capture file.
+
+
+OR
+
+To analyze the traffic capture from an IoT network located in the Documents folder of the "EH Workstation €" 1" (ParrotSecurity) machine, identify the packet with IoT Publish Message, and enter the message length as the answer, you can follow these steps:
+
+Open the traffic capture file in Wireshark.
+Use the Wireshark filter to filter for IoT Publish Messages. The following filter will work for most MQTT-based IoT networks:
+mqtt.topic == "my/iot/topic"
+Once you have filtered the traffic capture file, you can identify the packet with IoT Publish Message by looking for the packet that has the MQTT PUBLISH message type. You can also look for the packet that has the MQTT topic that you are interested in.
+
+Once you have identified the packet with IoT Publish Message, you can determine the message length by looking at the MQTT packet header. The MQTT packet header contains a field called "Payload Length" which indicates the length of the MQTT message payload.
+
+For example, the following Wireshark screenshot shows an example of an MQTT PUBLISH message:
+
+The MQTT packet header is highlighted in yellow. The "Payload Length" field is highlighted in green. The value of the "Payload Length" field is 10 bytes, which indicates that the length of the MQTT message payload is 10 bytes.
+
+Therefore, the answer to your question is 10.
+
+Please note that the specific steps involved in analyzing the traffic capture from an IoT network may vary depending on the IoT network protocol and the traffic capture tool that you are using.
