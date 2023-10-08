@@ -1,0 +1,31 @@
+# ip of subnet and  crdentials might be given
+
+# need to check port 22 is open in any of the ops
+
+# check ssh (port 22) is open or not
+
+  nmap -sV -p 22 192.168.0.0/24
+
+  ssh kali@ip
+
+  sudo -l
+
+  # if allowed
+
+  sudo -i
+
+  # enter password
+
+  # whoami
+
+    cd /
+
+  # check file
+
+  # search for file
+    
+    find . -name root.txt
+
+    cat filename
+
+    
