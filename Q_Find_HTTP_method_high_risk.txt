@@ -1,0 +1,4 @@
+Check for Post Request
+-----------------------------------------
+1- Scan Using OWASP ZAP (Parrot)- Type zaproxy in the terminal and then it would open. 
+In target tab put the url and click automated scan.
