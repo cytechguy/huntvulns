@@ -3,16 +3,23 @@
 
 # aircrack tool
 
-# wep 
+ wep network
+******************
+# Open the folder where is the pcap file is located
+# ls
+
   aircrack-ng pcapfilename
+  
 
-
-#WPA2 newtrok
-
-
-
+WPA2 network
+******************
+# Open the folder where is the pcap file is located
 # Open PCAP file
 # Get BSS Id from Pcap file
-# aircrack-ng -a2 -b <targetbssid> -w <passwordlist> pcapfile
+aircrack-ng pcapfilename.pcap -w passwordlist.txt
+
+or
+
+aircrack-ng -a2 -b <targetbssid> -w <passwordlist> pcapfile
 (Drag and Drop also possible)
 Key Found
