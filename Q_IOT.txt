@@ -1,14 +1,19 @@
+
 To analyze the traffic capture from an IoT network, we can use the Wireshark tool. Follow these steps:
 
-1. Open Wireshark on the "EH Workstation &#8364;" 1" (ParrotSecurity) machine.
+Open Wireshark
 
-2. Go to File > Open and select the traffic capture file from the Documents folder.
+Open Pcap file
 
-3. Once the file is opened, you can start analyzing the packets.
+In the Wireshark filter bar, enter the following filter to display only the MQTT packets:
 
-4. In the Wireshark filter bar, enter the following filter to display only the MQTT packets:
+  mqtt
 
-mqtt
+select publish message
+select MQ Telemetry Transport Protocol, Publish Message
+  # here you can see message details
+click on Publish Release Message
+click on Publish Receive Message
 
 5. Look for the packet with the "Publish" message. This packet will have a "PUBLISH" label in the MQTT section of the packet details.
 
