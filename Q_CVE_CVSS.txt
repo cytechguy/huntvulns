@@ -1,4 +1,4 @@
-Question: IP will be given and need to find severiuty of vulnerability
+Question: IP will be given and need to find the severity of the vulnerability
 **************************************************************************
 
 nmap -Pn --script vuln ip
