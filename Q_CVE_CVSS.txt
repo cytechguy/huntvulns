@@ -11,4 +11,6 @@ nmap -Pn --script vuln ip
 
 # will get severity from that website
 
-# most of the time it is 10
+# most of the time it is 10 
+
+# All the best Shamee***
