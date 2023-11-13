@@ -13,7 +13,7 @@ snow -C -p "magic" readme2.txt
 
 (then it will show the content of readme2.txt content)
 
-
+--------------------------------------
 Will get the secret message 
 
 
