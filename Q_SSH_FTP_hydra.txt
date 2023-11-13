@@ -1,3 +1,6 @@
+Multiple questions will need hydra and ftp
+-----------------------------------------------
+
 Hydra for SSH
 *******************************************************
 hydra -l user -p password <ip> ssh
