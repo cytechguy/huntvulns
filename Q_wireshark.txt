@@ -14,6 +14,7 @@ Find attack IP??
 
 DDOS - total attacking machines
 --------------------------------------
+--------------------------------------
 Same steps for DOS
 Check the IP addresses having large number of requests
 
