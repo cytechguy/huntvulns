@@ -27,15 +27,4 @@ FQDN = Host.Domain.com
 
 
 
-OR
-
-
-nmap -sn 192.168.0.0/24
-nmap -p 135,137,138,139,445 192.168.0.0/24
-nmap -p 135,137,138,139,445 --script smb-os-discovery 192.168.0.0/24 | grep -i windows server
-
-nmap -p 389,636 192.168.0.0/24 --script ldap-rootdse
-
-nmap -p 389 --script ldap-domain-info 192.168.0.0/24
-
 
