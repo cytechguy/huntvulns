@@ -6,7 +6,15 @@
 
   nmap -sV -p 22 192.168.0.0/24
 
-  ssh kali@ip
+  ssh username@ip
+
+  #enter password
+
+  # go to home directory
+
+  # check for txt files
+
+  # there will be 2 files, one will be the answer
 
   sudo -l
 
