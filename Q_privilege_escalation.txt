@@ -14,7 +14,7 @@
 
   # check for txt files
 
-  # there will be 2 files, one will be the answer
+  # there may be files
 
   sudo -l
 
