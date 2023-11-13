@@ -9,7 +9,9 @@
 # ls
 
   aircrack-ng pcapfilename
-  
+
+# you will get the answer
+
 
 WPA2 network
 ******************
