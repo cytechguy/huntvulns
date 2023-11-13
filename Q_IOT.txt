@@ -7,7 +7,9 @@ Open Pcap file
 
 In the Wireshark filter bar, enter the following filter to display only the MQTT packets:
 
-  mqtt
+  filter using "mqtt"
+
+mqtt
 
 select publish message
 select MQ Telemetry Transport Protocol, Publish Message
