@@ -2,6 +2,9 @@
 SQL Injections
 **********************
 
+Use based on question
+
+
 # Auth Bypass-  
   hi'OR 1=1 --
 
